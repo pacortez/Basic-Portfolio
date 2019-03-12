@@ -1,0 +1,203 @@
+/*things to fix: 
+Name to align with content box
+image to stay a fixed size
+footer text to drop to lower
+*/
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+h1 {
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: inline;
+    
+}
+
+#me {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    
+}
+
+.header {
+    overflow: hidden; 
+    background-color: #ffffff; 
+    /* padding-bottom: 20px; */
+    border-bottom: 4px solid #cccccc;
+    
+}
+
+.header a {
+    float: left;
+    color: #777777;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+/*change background color on mouse-over */
+.header a:hover {
+    background-color: #ddd;
+    color: white;
+}
+
+/*style active/current link*/
+.header a.active {
+    background-color: #4aaaa5;
+    color: white;
+}
+
+.header-right {
+    float: right;
+}
+
+/*add media queries for responsiveness - when screen in 500px wide 
+or less, stack links on top of each other*/
+
+@media screen and (max-width: 500px) {
+    .header a{
+        float: none;
+        display: block;
+        text-align: left;
+
+    }
+    .header-right {
+        float: none;
+    }
+    
+   
+}
+
+.wrapper {
+    background-image: url("../morocco.png");
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: 960px;
+    display: block;
+    background-size: 100% 100%;
+} 
+
+.box {
+    color: #777777;
+    background-color: #ffffff;   
+    border-color: #dddddd;
+    width: 550px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    border: 1px solid #cccccc;
+    overflow-y: scroll;
+}
+
+
+#profilePhoto {
+    float: left;
+    margin: 0px 15px 5px 0px;
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+img {
+    float: left;
+    /* margin: 10px; */
+    max-width: 150px;
+    max-height: auto;
+    /* object-fit: contain; */
+}
+
+/* Portfolio Page Styling*/
+
+.polaroid {
+    /* width: 150px;
+    height: 200px; */
+    /* background-color: #4aaaa5; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 15px;
+    /* color: white; */
+    float: left;
+    
+   
+    
+  }
+  
+.container {
+    text-align: center;
+    padding: 5px 5px;
+    
+
+}   
+
+/* a:link {
+  text-decoration: none;
+  
+} */
+
+.pol {
+    color: #4aaaa5;
+    text-decoration: none;
+   
+}
+
+
+
+/*Contact Form Styling*/
+
+input[type=text], 
+input[type=email], 
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #dddddd;
+    color: #4aaaa5;
+}
+
+/*background color and padding around form*/
+
+/* .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+
+} */
+
+
+
+footer {
+    background-color: #666666;
+    border-top: 8px solid #4aaaa5;
+    height: 50px;  
+    text-align: center;
+    color: white;
+    font-size: 8px;
+    padding-top: 30px;
+    
+}
