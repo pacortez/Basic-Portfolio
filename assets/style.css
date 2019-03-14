@@ -1,12 +1,12 @@
 /*things to fix: 
 Name to align with content box
-image to stay a fixed size
-footer text to drop to lower
+
 */
 
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    
     
 }
 
@@ -23,13 +23,15 @@ h1 {
     padding: 15px 20px;
     text-align: center;
     
+    
 }
 
 .header {
     overflow: hidden; 
     background-color: #ffffff; 
-    /* padding-bottom: 20px; */
+    padding-top: 10px;
     border-bottom: 4px solid #cccccc;
+    max-width: 960px;
     
 }
 
@@ -64,27 +66,34 @@ h1 {
 or less, stack links on top of each other*/
 
 @media screen and (max-width: 500px) {
-    .header a{
+    .header a {
         float: none;
         display: block;
         text-align: left;
-
     }
+
     .header-right {
         float: none;
     }
     
-   
+    
+    #me {
+        float: none;
+        display: block;
+        text-align: left;
+    
+    }
+
 }
 
 .wrapper {
     background-image: url("../morocco.png");
-    background-repeat: no-repeat; 
-    background-attachment: fixed;
-    background-size: 100% 100%;
+    background-repeat: repeat-x; 
+    /* background-attachment: fixed; */
     width: 960px;
     display: block;
-    background-size: 100% 100%;
+    background-size: contain;
+    
 } 
 
 .box {
@@ -199,5 +208,6 @@ footer {
     color: white;
     font-size: 8px;
     padding-top: 30px;
+    max-width: 960px;
     
 }
